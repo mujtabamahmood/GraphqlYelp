@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="client_id">9FQYZDRbiZYiDkKYwXRjng</string>
+    <string name="client_secret"></string>
+    <string name="api_key">pbTA8n7g9pl7hBQ2CBwnCtgwJW2kVCyaHXwXnSEf66kqE4VN_bzPolBckSyG1KkbK47HusNJ0slUqMMo5hvZTTUs9npTMk2umm8umO6Q-I01G6LuQ4GyL3YZdvxpYHYx</string>
+</resources>

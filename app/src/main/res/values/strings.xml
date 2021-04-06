@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">YelpGraphQL</string>
+    <string name="unexpected_error_message">Unexpected Error</string>
+    <string name="restaurant_image">Restaurant Image</string>
+    <string name="seperator">.</string>
+    <string name="restaurant_rating">Restaurant Rating</string>
+    <string name="enter_search_text_here">Enter Search Text here</string>
 </resources>

@@ -1,4 +1,3 @@
 package com.a.yelpgraphql.utils
 
-class Constants {
-}
+const val BUSINESS_EXTRA = "business_extra"

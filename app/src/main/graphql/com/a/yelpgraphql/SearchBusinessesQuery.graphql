@@ -1,8 +1,19 @@
-query GetBusinesses($location: String) {
-  search(location: $location) {
-    total
-    business {
-      name
+query Search($location: String,$term:String) {
+  search(term: $term, location: $location) {
+     total
+        business {
+          id
+          name
+          rating
+          photos
+          price
+          coordinates {
+            latitude
+            longitude
+          }
+          categories {
+            title
+          }
+        }
+      }
     }
-  }
-}

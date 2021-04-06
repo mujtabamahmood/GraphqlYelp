@@ -1,7 +1,9 @@
 package com.a.yelpgraphql.di
 
+import android.util.Log
 import com.a.yelpgraphql.data.datasource.local.AppDao
 import com.a.yelpgraphql.data.datasource.remote.RemoteDataSourceImpl
+import com.a.yelpgraphql.data.repository.AppRepositoryImpl
 import com.a.yelpgraphql.domain.repository.AppRepository
 import dagger.Module
 import dagger.Provides
@@ -16,7 +18,9 @@ object RepositoryModule {
     @Provides
     @Singleton
     fun provideAppRepository(appDao: AppDao): AppRepository{
+        Log.d("TAG", "provideAppRepository ")
+
         val remoteDataSource = RemoteDataSourceImpl()
-        return com.a.yelpgraphql.data.repository.AppRepositoryImpl(remoteDataSource, appDao)
+        return AppRepositoryImpl(remoteDataSource, appDao)
     }
 }
