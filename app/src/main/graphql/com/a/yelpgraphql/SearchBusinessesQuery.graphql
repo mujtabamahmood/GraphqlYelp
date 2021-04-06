@@ -1,0 +1,8 @@
+query GetBusinesses($location: String) {
+  search(location: $location) {
+    total
+    business {
+      name
+    }
+  }
+}
